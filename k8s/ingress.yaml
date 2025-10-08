@@ -1,0 +1,29 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: kube-credential-ingress
+spec:
+  rules:
+    - http:
+        paths:
+          - path: /api/issuance
+            pathType: Prefix
+            backend:
+              service:
+                name: issuance-svc
+                port:
+                  number: 3001
+          - path: /api/verification
+            pathType: Prefix
+            backend:
+              service:
+                name: verification-svc
+                port:
+                  number: 3002
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: kube-frontend-svc
+                port:
+                  number: 80

@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kube-frontend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: kube-frontend
+  template:
+    metadata:
+      labels:
+        app: kube-frontend
+    spec:
+      containers:
+        - name: kube-frontend
+          image: yourdockerhub/kube-frontend:latest
+          ports:
+            - containerPort: 80

@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: issuance
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: issuance
+  template:
+    metadata:
+      labels:
+        app: issuance
+    spec:
+      containers:
+        - name: issuance
+          image: yourdockerhub/issuance:latest
+          ports:
+            - containerPort: 3001
+          env:
+            - name: WORKER_ID
+              valueFrom:
+                fieldRef:
+                  fieldPath: metadata.name
+          volumeMounts:
+            - name: data
+              mountPath: /data
+      volumes:
+        - name: data
+          emptyDir: {}
