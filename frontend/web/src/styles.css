@@ -1,0 +1,4 @@
+body { margin: 0; padding: 0; }
+input { width: 100%; padding: 6px; margin-bottom: 8px; }
+button { padding: 8px 12px; }
+pre { background: #f7f7f7; padding: 12px; border-radius: 6px; }
