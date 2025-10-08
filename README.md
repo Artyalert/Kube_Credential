@@ -1,4 +1,4 @@
-# Kube Credential - Full Project Scaffold
+# Kube Credential 
 
 This repository contains a ready-to-run scaffold for the **Kube Credential** assignment.
 It includes:
