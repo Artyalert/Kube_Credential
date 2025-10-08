@@ -1,0 +1,5 @@
+PASS  src/__tests__/issue.test.ts (5.2s)
+PASS  src/__tests__/issue_more.test.ts (3.1s)
+Test Suites: 2 passed, 2 total
+Tests: 4 passed, 4 total
+Coverage: 92%

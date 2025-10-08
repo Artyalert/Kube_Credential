@@ -1,0 +1,1 @@
+Could not create gif: all input arrays must have the same shape

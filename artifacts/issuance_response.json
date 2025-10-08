@@ -1,0 +1,9 @@
+{
+  "message": "credential issued",
+  "worker": "issuance-abc123",
+  "issuedAt": "2025-10-08T09:12:59.445675Z",
+  "credential": {
+    "id": "evidence-1",
+    "name": "Evidence User"
+  }
+}

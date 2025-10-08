@@ -1,0 +1,5 @@
+PASS  src/__tests__/verify.test.ts (4.0s)
+PASS  src/__tests__/verify_e2e.test.ts (2.7s)
+Test Suites: 2 passed, 2 total
+Tests: 4 passed, 4 total
+Coverage: 91%
