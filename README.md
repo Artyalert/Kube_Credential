@@ -61,3 +61,8 @@ npm install
 npm test
 ```
 
+
+# My Details 
+Name : Aryan Tyagi
+E-mail : aryanty842@gmail.com
+Phone : +91(9058451223)
